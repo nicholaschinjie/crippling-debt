@@ -1,0 +1,49 @@
+<%# login and account creation form %>
+<% include partials/header.ejs %>
+<head>
+    
+    <style type="text/css">
+        body{
+            text-align: left;
+        }
+    </style>
+    
+</head>
+    <style type="text/css">
+        body{
+            text-align: center;
+            background-color: rgba(217, 243, 222, 0.5);
+        }
+    </style>
+
+
+<div class="container">
+    <p><br /></p>
+    <body>
+    
+    <style type="text/css">
+        body{
+            text-align: center;
+            background-color: rgba(217, 243, 222, 0.5);
+        }
+    </style>
+    </body>
+    
+    <h1>Welcome to Crippling Debt!</h1>
+    <p><br><br></p>
+    <form class="add-post-form" action="" method="post" enctype="multipart/form-data">
+    <div id="form-wrapper" style="max-width:500px;margin:auto;">
+
+            <p>
+                <label>Phone Number:</label>
+                <input type="text" class="form col-md-5" name="uid" required>
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="text" class="form col-md-4" name="password" required>
+            </p>
+            <p> 
+<input type="submit" class= "btn" btn-md value="Login">
+                <p><br></p>
+<a href="/createacc" class="btn btn-md btn-primary">Create New Account</a>
+        

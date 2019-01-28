@@ -1,0 +1,52 @@
+<% include partials/header.ejs %>
+<html>
+    <head>
+    <style type="text/css">
+        body{
+            text-align: center;
+            background-color: rgba(217, 243, 222, 0.5);
+        }
+    </style>
+    </head>
+    <div class="container">
+        <p><br /> <br /></p>
+            <h1>Debtor <u>Hitlist</u></h1><br>
+            <h2>There ain't no such thing as a free lunch</h2>
+        <p><br></p>
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        <form class="add-player-form" action="" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="first_name" id="first-name" placeholder="First Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="last_name" id="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="amount_owed" id="amount_owed" placeholder="How much does he/she owe?" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="amount_borrowed" id="amount_borrowed" placeholder="How much do you owe?" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="date" id="date" placeholder="Due Date: YYYY-MM-DD" required>
+                </div>
+            </div>
+                <br><br>
+            <button type="submit" class="btn btn-primary float-right">Add Debtor</button>
+        </form>
+    </div>
+</div>
+</html>
